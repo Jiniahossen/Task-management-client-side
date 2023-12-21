@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
-        <div>
+        <div className="flex flex-col-reverse md:flex-row items-center gap-6 mt-6">
             <div>
                 <h1 className="text-5xl font-serif">Visualize any workflow with Board view.</h1>
                 <p className="font-serif mt-2">Manage your tasks and projects at a glance with ClickUps flexible Board view. Drag-and-drop tasks, sort, filter, and more with a fully customizable Kanban system.</p>
@@ -12,7 +12,7 @@ const Banner = () => {
                 </Link>
             </div>
             <div>
-                
+                <img src="https://i.ibb.co/MffpdFF/maximize-efficiency-1.png" alt="" />
             </div>
         </div>
     );

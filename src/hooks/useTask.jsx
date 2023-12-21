@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import useAuth from "./useAuth";
 import useAxiosPublic from "./useAxiosPublic";
 
-const useUserCart = () => {
+const useTask = () => {
     const axiosPublic = useAxiosPublic()
     const { user } = useAuth();
     const { refetch, data: task = [] } = useQuery({
@@ -16,4 +16,4 @@ const useUserCart = () => {
     return [task, refetch];
 };
 
-export default useUserCart;
+export default useTask;

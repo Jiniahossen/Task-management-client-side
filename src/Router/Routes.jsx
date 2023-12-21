@@ -16,21 +16,21 @@ const Routes=createBrowserRouter([
                 index:true,
                 element:<Home></Home>
             },
-            {
-                path:'/dashboard',
-                element:<Dashboard></Dashboard>,
-                children:[
-                    {
-                        path:'/dashboard/add-task',
-                        element:<AddTask></AddTask>
-                    },
-                    {
-                        path:'/dashboard/all-task',
-                        element:<AllTask></AllTask>
-                    }
-                ]
-            }
          ]
+    },
+    {
+        path:'/dashboard',
+        element:<Dashboard></Dashboard>,
+        children:[
+            {
+                path:'/dashboard/add-task',
+                element:<AddTask></AddTask>
+            },
+            {
+                path:'/dashboard/all-task',
+                element:<AllTask></AllTask>
+            }
+        ]
     },
     {
         path:'/login',
