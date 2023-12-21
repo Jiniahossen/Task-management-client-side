@@ -6,12 +6,7 @@ import Swal from "sweetalert2";
 
 const Navbar = () => {
     const { user, logOut } = useAuth();
-
-    // const drawerRightExample = new Flowbite.Drawer({
-    //     target: 'drawer-right-example', // ID of your drawer element
-    //     placement: 'right',
-    // });
-
+    console.log(user);
 
     const handleLogOut = () => {
         logOut()
@@ -71,11 +66,13 @@ const Navbar = () => {
                                     About Us
                                 </Link>
                             </li>
-                            <li>
-                                <Link to={'/dashboard'}>
-                                    Dashboard
-                                </Link>
-                            </li>
+                            {
+                                user ? <li>
+                                    <Link to={'/dashboard'}>
+                                        Dashboard
+                                    </Link>
+                                </li> : <></>
+                            }
                             <li>
                                 <Link to={'/contact'}>
                                     Contact

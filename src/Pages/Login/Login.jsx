@@ -11,7 +11,6 @@ import useAxiosPublic from "../../hooks/useAxiosPublic";
 const Login = () => {
     const {signInWithGoogle}=useAuth();
     const axiosPublic=useAxiosPublic();
-
     const navigate = useNavigate();
     const location = useLocation();
     const from = location?.state?.from?.pathname || '/';
