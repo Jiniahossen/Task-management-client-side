@@ -45,7 +45,7 @@ const SignIn = () => {
                 .then((res) => {
                   if (res.data.insertedId) {
                     Swal.fire("Account create successfully");
-                    navigate('/')
+                    navigate('/dashboard')
                   }
                 })
             })
@@ -72,7 +72,7 @@ const SignIn = () => {
          .then((res)=>{
              console.log(res.data);
                  Swal.fire('Hola you are here!')
-                 navigate('/')
+                 navigate('/dashboard')
              
          })
         }

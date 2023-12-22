@@ -6,6 +6,8 @@ import SignIn from "../Pages/SignIn/SignIn";
 import Dashboard from "../Layouts/Dashboard";
 import AddTask from "../Pages/Dashboard/AddTask/AddTask";
 import AllTask from "../Pages/Dashboard/AllTask/AllTask";
+import ContactUs from "../Pages/Contact/ContactUs";
+import AboutUs from "../Pages/AboutUs/AboutUs";
 
 const Routes=createBrowserRouter([
     {
@@ -16,6 +18,14 @@ const Routes=createBrowserRouter([
                 index:true,
                 element:<Home></Home>
             },
+            {
+                path:'/contact',
+                element:<ContactUs></ContactUs>
+            },
+            {
+                path:'/aboutus',
+                element:<AboutUs></AboutUs>
+            }
          ]
     },
     {

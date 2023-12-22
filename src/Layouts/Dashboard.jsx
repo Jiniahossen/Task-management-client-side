@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { FaHome } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
 import { FaListCheck } from "react-icons/fa6";
@@ -6,6 +7,9 @@ import { NavLink, Outlet } from "react-router-dom";
 const Dashboard = () => {
     return (
         <div>
+            <Helmet>
+                <title>TeamWork | Dashboard</title>
+            </Helmet>
             <div className=" flex flex-col md:flex-row  max-w-full min-h-screen">
                 <div className="p-6  w-80 bg-[#67deae]">
                     <h1 className=" mb-10 text-center text-black font-serif font-bold text-2xl">

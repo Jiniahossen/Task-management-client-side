@@ -47,7 +47,7 @@ const Login = () => {
         .then((res)=>{
             console.log(res.data);
                 Swal.fire('Hola you are here!')
-                navigate('/')
+                navigate('/dashboard')
             
         })
        }
